@@ -98,7 +98,7 @@ section h2{font-size:clamp(26px,3.4vw,34px);margin-bottom:18px}
 <div class="page">
 <header class="head">
 <img src="https://static.wixstatic.com/media/839d13_96273a05ff614604b7b677f0a8b53e54~mv2.png/v1/fill/w_500,h_279,al_c,q_90,enc_avif,quality_auto/logo.png" alt="Alternative Dream">
-<div class="meta"><span>הצעת מחיר עבור <b>טליה</b></span><span>תאריך: 06.10.2026</span></div>
+<div class="meta"><span>הצעת מחיר</span></div>
 </header>
 
 <div class="hero">
@@ -258,7 +258,7 @@ const d=pkg==='full'&&door.checked;
 const base=PRICES[pkg];
 document.getElementById('total').textContent=base==null?fmt(null)+(d?' + ₪1,500':''):fmt(base+(d?PRICES.door:0));
 document.getElementById('sumLabel').textContent=label[pkg]+(d?' + דלת נוספת':'')+' · פטור ממע״מ';
-document.getElementById('wa').href='https://wa.me/972515490099?text='+encodeURIComponent('היי, זאת טליה. אני מאשרת: יורט 6 מ׳ – '+label[pkg]+(d?' + תוספת דלת':'')+'. צבע קיר: '+cn(sel.wall)+', צבע גג: '+cn(sel.roof)+', בד פנימי: '+cn(sel.liner,'liner'));
+document.getElementById('wa').href='https://wa.me/972515490099?text='+encodeURIComponent('היי, אני מאשרת: יורט 6 מ׳ – '+label[pkg]+(d?' + תוספת דלת':'')+'. צבע קיר: '+cn(sel.wall)+', צבע גג: '+cn(sel.roof)+', בד פנימי: '+cn(sel.liner,'liner'));
 }
 document.querySelectorAll('.pkg').forEach(b=>b.addEventListener('click',()=>{pkg=b.dataset.pkg;update()}));
 door.addEventListener('change',update);

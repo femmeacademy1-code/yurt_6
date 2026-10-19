@@ -14,7 +14,7 @@ High-fidelity. Final copy, colors, type, spacing and interactions.
 ## Layout (single screen, max-width 880px, centered)
 Page padding `0 clamp(18px,5vw,48px) 120px` (the bottom padding leaves room for the fixed bar). Each section has `padding:36px 0` and a `1px dashed` top divider. Every section starts with a small orange kicker (14px/700, `#a4531c`) and then an H2 (`clamp(26px,3.4vw,34px)`).
 
-1. **Header**: the Alternative Dream logo (84px tall, Wix CDN URL) on one side, "הצעת מחיר עבור **טליה**" and the date 06.10.2026 on the other.
+1. **Header**: the Alternative Dream logo (84px tall, Wix CDN URL) on one side, the label "הצעת מחיר" (no client name or date) on the other.
 2. **Hero**: a 2-column grid. Text column: kicker, H1 "יורט קוטר 6 מטר" (`clamp(34px,5vw,52px)`), a 19px paragraph, and pill chips (28 מ״ר / גובה מרכזי 3.70 מ׳ / 4 עונות). Image column: `assets/yurt-b.jpeg` in an arch shape (3:4, `border-radius:200px 200px 24px 24px`).
 3. **Specs** (נתונים טכניים): a `<dl>` auto-fit grid (min 150px) of 10 tiles. Tile background `#e8dfd1`, radius 20px; 13px orange label over a 19px/700 brown value.
 4. **Packages** (מה כלול): two selectable cards (`<button aria-pressed>`). Card: background `#fbf7f1`, radius 28px, padding 24px, 2px border (green when selected), radio dot, ✓ list (excluded items marked "–" at 55% opacity). Price row shows a struck-through old price, the price in 32px orange, and "פטור ממע״מ".
