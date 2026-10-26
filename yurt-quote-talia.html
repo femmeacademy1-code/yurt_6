@@ -147,7 +147,7 @@ section h2{font-size:clamp(26px,3.4vw,34px);margin-bottom:18px}
 <li>כיפת כוכבים אקריליק (PMMA) בקוטר 110 ס״מ + 3 ווי קיבוע</li>
 <li>מסיט גשם מעל הדלת + פס טפטוף מעץ לבוד 18.84 מ׳</li>
 </ul>
-<div class="p"><s style="font-size:20px;opacity:.6">₪32,000</s><b data-price="full"></b><span class="vat">פטור ממע״מ</span></div>
+<div class="p"><s style="font-size:20px;opacity:.6">₪32,000</s><b data-price="full"></b><span class="vat">לא כולל מע״מ</span></div>
 </button>
 <button class="pkg" type="button" data-pkg="fabric" aria-pressed="false">
 <div class="top"><h3>בד חיצוני ופנימי בלבד</h3><span class="radio-dot"></span></div>
@@ -160,7 +160,7 @@ section h2{font-size:clamp(26px,3.4vw,34px);margin-bottom:18px}
 </ul>
 <p style="margin:0;font-size:15px">מתאים למי שכבר יש לה שלד יורט בקוטר 6 מ׳, או להחלפת כיסוי קיים.</p>
 <p style="margin:0;font-size:15px;font-weight:700;color:var(--orange-deep)">באחריות הלקוחה להעביר מידות מדויקות ומיקומים של החלונות והדלת, לתפירה מדויקת של הבד.</p>
-<div class="p"><s style="font-size:20px;opacity:.6">₪15,500</s><b data-price="fabric"></b><span class="vat">פטור ממע״מ</span></div>
+<div class="p"><s style="font-size:20px;opacity:.6">₪15,500</s><b data-price="fabric"></b><span class="vat">לא כולל מע״מ</span></div>
 </button>
 </div>
 <label class="addon" id="addonRow">
@@ -257,7 +257,7 @@ document.getElementById('addonRow').style.display=pkg==='full'?'':'none';
 const d=pkg==='full'&&door.checked;
 const base=PRICES[pkg];
 document.getElementById('total').textContent=base==null?fmt(null)+(d?' + ₪1,500':''):fmt(base+(d?PRICES.door:0));
-document.getElementById('sumLabel').textContent=label[pkg]+(d?' + דלת נוספת':'')+' · פטור ממע״מ';
+document.getElementById('sumLabel').textContent=label[pkg]+(d?' + דלת נוספת':'')+' · לא כולל מע״מ';
 document.getElementById('wa').href='https://wa.me/972515490099?text='+encodeURIComponent('היי, אני מאשרת: יורט 6 מ׳ – '+label[pkg]+(d?' + תוספת דלת':'')+'. צבע קיר: '+cn(sel.wall)+', צבע גג: '+cn(sel.roof)+', בד פנימי: '+cn(sel.liner,'liner'));
 }
 document.querySelectorAll('.pkg').forEach(b=>b.addEventListener('click',()=>{pkg=b.dataset.pkg;update()}));
