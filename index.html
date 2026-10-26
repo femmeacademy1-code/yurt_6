@@ -68,6 +68,8 @@ section h2{font-size:clamp(26px,3.4vw,34px);margin-bottom:18px}
 .layers div:nth-child(2){background:#bfae95;color:#2b2522}
 .layers div:nth-child(3){background:#ece3d3;color:#2b2522}
 .layers span{font-weight:400}
+.layers b{font-weight:800;font-size:18px}.layers small{flex-basis:100%;font-size:15px;font-weight:500;opacity:.95}
+.pkg li.hl{font-size:18px;margin-top:4px}.pkg li.hl::before{content:"◆"}.pkg li.sub{padding-inline-start:18px;font-size:15px}.pkg li.sub b{color:var(--brown)}
 .vids{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px;margin-top:12px}.vids video{width:100%;aspect-ratio:9/16;max-height:520px;object-fit:cover;border-radius:24px;background:#2b2522;display:block}
 .colorpick{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);gap:24px;align-items:center}
 .preview{background:#fbf7f1;border-radius:28px;padding:20px;box-shadow:var(--shadow-sm)}.preview svg{display:block;width:100%}.preview path,.preview rect{transition:fill .25s}
@@ -139,9 +141,10 @@ section h2{font-size:clamp(26px,3.4vw,34px);margin-bottom:18px}
 <li>קיר סריג עץ – 3.5 יחידות, 190×500 ס״מ</li>
 <li>40 קורות גג מעץ מלא 40×60 מ״מ</li>
 <li>טבעת מרכזית (קרון) + כבל מתיחה 18.84 מ׳</li>
-<li>כיסוי פנימי קנבס 50% כותנה / 50% קנבוס, 230 גר׳/מ״ר</li>
-<li>שכבת בידוד לבד צמר, 1,130 גר׳/מ״ר</li>
-<li>כיסוי חיצוני פוליאסטר אטום, 850 גר׳/מ״ר</li>
+<li class="hl"><span><b>כיסוי תלת-שכבתי</b> (מבחוץ פנימה):</span></li>
+<li class="sub"><span><b>1 · חיצונית – פוליאסטר אטום מים</b> 850 גר׳/מ״ר, ≥5,000 מ״מ, עמיד UV, עובש ואש (NFPA 701)</span></li>
+<li class="sub"><span><b>2 · בידוד – לבד צמר</b> 1,130 גר׳/מ״ר, חם בחורף וקריר בקיץ</span></li>
+<li class="sub"><span><b>3 · פנימית – קנבס 50% כותנה / 50% קנבוס</b> 230 גר׳/מ״ר, נושם ורך</span></li>
 <li>דלת עץ משולבת 102×180 ס״מ, זכוכית מחוסמת 6 מ״מ</li>
 <li>2 חלונות עץ 80×180 ס״מ, זכוכית מחוסמת 6 מ״מ</li>
 <li>כיפת כוכבים אקריליק (PMMA) בקוטר 110 ס״מ + 3 ווי קיבוע</li>
@@ -152,8 +155,8 @@ section h2{font-size:clamp(26px,3.4vw,34px);margin-bottom:18px}
 <button class="pkg" type="button" data-pkg="fabric" aria-pressed="false">
 <div class="top"><h3>בד חיצוני ופנימי בלבד</h3><span class="radio-dot"></span></div>
 <ul>
-<li>כיסוי חיצוני פוליאסטר אטום (קיר + גג), 850 גר׳/מ״ר</li>
-<li>כיסוי פנימי קנבס 50% כותנה / 50% קנבוס, 230 גר׳/מ״ר</li>
+<li><span><b>כיסוי חיצוני – פוליאסטר אטום מים</b> (קיר + גג), 850 גר׳/מ״ר</span></li>
+<li><span><b>כיסוי פנימי – קנבס 50% כותנה / 50% קנבוס</b>, 230 גר׳/מ״ר</span></li>
 <li class="no">ללא שלד עץ, דלת וחלונות</li>
 <li class="no">ללא כיפה</li>
 <li class="no">ללא תוספות נלוות מלבד בד חיצוני ופנימי</li>
@@ -187,9 +190,9 @@ section h2{font-size:clamp(26px,3.4vw,34px);margin-bottom:18px}
 <span class="kicker">תפריט חומרים</span>
 <h2>מה כוללת חבילת היורט המלאה</h2>
 <div class="layers" aria-label="שכבות הכיסוי מבחוץ פנימה">
-<div>שכבה 3 · פוליאסטר חיצוני <span>850 גר׳/מ״ר</span></div>
-<div>שכבה 2 · לבד צמר לבידוד <span>1,130 גר׳/מ״ר</span></div>
-<div>שכבה 1 · קנבס פנימי <span>230 גר׳/מ״ר</span></div>
+<div><b>שכבה 3 · חיצונית – פוליאסטר</b> <span>850 גר׳/מ״ר</span><small>בד פוליאסטר אטום מים (≥5,000 מ״מ), עמיד לשמש (UV), לעובש ולרוח, מעכב בעירה לפי NFPA 701 · 20 צבעים</small></div>
+<div><b>שכבה 2 · בידוד – לבד צמר</b> <span>1,130 גר׳/מ״ר</span><small>שכבה עבה באמצע: שומרת על חום בחורף ועל קרירות בקיץ, עמידה ללחות</small></div>
+<div><b>שכבה 1 · פנימית – קנבס</b> <span>230 גר׳/מ״ר</span><small>קנבס טבעי ונושם, 50% כותנה ו-50% קנבוס · 9 צבעים</small></div>
 </div>
 <div class="mats">
 <div class="mat"><img class="th" src="assets/yurt-parts/cover.png" alt="" loading="lazy"><div><h3>כיסוי חיצוני – פוליאסטר</h3><span class="tagline">השכבה שמול מזג האוויר</span></div><p>בד פוליאסטר עבה שמגן מגשם, שמש ורוח. אטום למים (≥5,000 מ״מ), עמיד לקרינת UV, לעובש ומעכב בעירה לפי תקן NFPA 701.<small>850 גר׳/מ״ר · 20 צבעים לבחירה</small></p></div>
